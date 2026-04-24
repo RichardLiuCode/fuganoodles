@@ -23,6 +23,7 @@ body {
     font-family: arial;
     font-size: 60px;
     text-align: center;
+    z-index: 2;
 }
 
 .text-container h1 {
@@ -51,6 +52,7 @@ body {
     height: fit-content;
     object-fit: contain;
     background: none;
+    z-index: 1;
 }
 
 .cupNoodlesImages.left {
