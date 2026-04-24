@@ -1,0 +1,64 @@
+html,
+body {
+    background-image: url("backgroundImage.gif");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.mainContentContainer {
+    margin: 0px;
+    margin-top: -22px;
+    width: 100%;
+    height: calc(100% - 40px);
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    user-select: none;
+    color: red;
+    font-family: arial;
+    font-size: 60px;
+    text-align: center;
+}
+
+.text-container h1 {
+    font-weight: 90;
+    margin-bottom: 0px;
+}
+
+.text-container p {
+    margin-top: 5px;
+}
+
+.cupNoodlesImagesContainer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 45%;
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cupNoodlesImages {
+    width: 30%;
+    height: fit-content;
+    object-fit: contain;
+    background: none;
+}
+
+.cupNoodlesImages.left {
+    transform: rotateZ(-20deg);
+    margin-left: 25px;
+}
+
+.cupNoodlesImages.right {
+    transform: rotateZ(20deg);
+    margin-right: 25px;
+}
