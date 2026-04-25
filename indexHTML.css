@@ -1,6 +1,6 @@
 html,
 body {
-    background-image: url("backgroundImage.gif");
+    background-image: url("./assets/backgroundImage.gif");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
