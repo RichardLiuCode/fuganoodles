@@ -115,12 +115,11 @@ body {
 }
 
 .adFrame {
-    margin-left: 10%;
     margin-top: 20px;
     margin-bottom: 0px;
     border: none;
-    width: 80%;
-    aspect-ratio: 3 / 2;
+    width: 100%;
+    height: calc(100vh - 40px)
 }
 
 @media (max-width:600px) {
