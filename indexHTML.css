@@ -131,7 +131,7 @@ body {
 
 .footer {
     margin-left: 0px;
-    margin-top: 300px;
+    margin-top: 10px;
     margin-bottom: 0px;
     border: none;
     width: 100%;
@@ -146,13 +146,34 @@ body {
     background: none;
     width: calc(100% - 20px);
     height: calc(100% - 20px);
-}
-
-.footerTextContainer p {
     overflow-wrap: break-word;
     font-family: arial;
-    font-size: 25px;
     color: white;
+}
+
+.footerTextContainer p,
+.footerTextContainer a {
+    font-size: 20px;
+
+}
+
+
+.footerTextContainer a {
+    color: blue;
+}
+
+.footerTextContainer a {
+    color: rgb(7, 127, 240);
+}
+
+.footerTextContainer hr {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    height: 1px;
+    background-color: white;
 }
 
 @media (max-width:600px) {
