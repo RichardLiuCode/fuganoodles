@@ -1,3 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 html,
 body {
     background-image: url("./assets/backgroundImage.gif");
@@ -65,7 +71,7 @@ body {
     margin-right: 25px;
 }
 
-.adPreviewArea {
+.scrollingArea {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -100,7 +106,7 @@ body {
     pointer-events: none;
 }
 
-.adPreviewArea::-webkit-scrollbar {
+.scrollingArea::-webkit-scrollbar {
     display: none;
 }
 
@@ -114,12 +120,39 @@ body {
     background-color: rgb(115, 21, 4);
 }
 
-.adFrame {
+.contentDisplayFrame {
+    margin-left: 5%;
     margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    width: 90%;
+    height: calc(100vh - 100px)
+}
+
+.footer {
+    margin-left: 0px;
+    margin-top: 300px;
     margin-bottom: 0px;
     border: none;
     width: 100%;
-    height: calc(100vh - 40px)
+    height: 300px;
+    background: rgb(72, 13, 3);
+    overflow: hidden;
+}
+
+.footerTextContainer {
+    margin-top: 10px;
+    margin-left: 10px;
+    background: none;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+
+.footerTextContainer p {
+    overflow-wrap: break-word;
+    font-family: arial;
+    font-size: 25px;
+    color: white;
 }
 
 @media (max-width:600px) {
