@@ -3,6 +3,10 @@
     padding: none;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .bodyContainer {
     background: none;
     display: revert;
