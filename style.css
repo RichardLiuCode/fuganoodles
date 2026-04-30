@@ -46,7 +46,13 @@ body {
     text-decoration: none;
 }
 
-@media (max-width:535px) {
+@media (max-width:650px) {
+    .topBar {
+        height: 50px;
+    }
+}
+
+@media (max-width:540px) {
     .topBar.link a {
         font-size: 14px;
     }
