@@ -1,0 +1,76 @@
+<!--
+HTML written by Richard Liu, for the FUGA Noodles Group in Dr.Sherry Class.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexHTML.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUGA Noodles - Home</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="topBar">
+        <div class="topBar link">
+            <a href="./">Home</a>
+        </div>
+        <div class="topBar link" onclick="window.location.href='./aboutus.html'">
+            <a href="./aboutus.html">About Us</a>
+        </div>
+        <div class="topBar link" onclick="window.location.href='./whoarewesellingto.html'" style="width:150px">
+            <a href="./whoarewesellingto.html">Target Market</a>
+        </div>
+        <div class="topBar link" onclick="window.location.href='./qualityandmaterial.html'" style="width:150px">
+            <a href="./qualityandmaterial.html">Quality and Material</a>
+        </div>
+    </div>
+    <div class="mainContentContainer">
+        <div class="text-container">
+            <h1>FUGA NOODLES</h1>
+            <p>The New Era Of Ramen</p>
+        </div>
+    </div>
+    <div class="cupNoodlesImagesContainer">
+        <img class="cupNoodlesImages left" src="./assets/cupNoodles.png">
+        <img class="cupNoodlesImages right" src="./assets/cupNoodles.png">
+    </div>
+    <div class="scrollingArea">
+        <div class="scrollDownHint">
+            <p>Scroll Down</p>
+        </div>
+        <div class="adBlock">
+            <!--
+            The following iframe will embed the advertisement, 
+            the "advertisement.html is the html planned for make the advertisement, 
+            if not using this html file,
+            you can change the src to another advertisement page, 
+            such as a public google slide, pdf file, image (jpg, png) or powerpoint.
+            
+            - If using google slide for advertisement, change the src to: https://docs.google.com/presentation/d/e/2PACX-1vQv9F7THHG-RrA2G4xS0uOnm9fSUlTIH7AdC-PqF4CQW6L1C2uJwFvb_GnrDjvvIxdoSWknjgrxuM9q/pubembed?start=false&loop=false&delayms=3000
+            - If using the advertisement.html, change src to: ./advertisement.html
+        -->
+            <iframe class="contentDisplayFrame" src="./advertisement.html"></iframe>
+        </div>
+        <footer class="footer">
+            <div class="footerTextContainer">
+                <h1>FUGA Noodles</h1>
+                <hr>
+                <p style="font-weight: 700;">FUGA Noodles - A new brand of tasty noodles that is cheaper. <a
+                        href="./aboutus.html">About US</a></p>
+                <br>
+                <p>This website was developed for Eason`s group in San Francisco High Schools Of The Arts. These group
+                    has three person, Richard Liu build this website, and Josue and Eason wrote the content and the
+                    advertisement.
+                </p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

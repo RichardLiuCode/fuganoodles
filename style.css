@@ -45,3 +45,19 @@ body {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width:530px) {
+    .topBar.link a {
+        font-size: 14px;
+    }
+
+    .topBar.link {
+        width: fit-content;
+    }
+}
+
+@media (max-width:475px) {
+    .topBar.link a {
+        font-size: 12px;
+    }
+}
