@@ -45,7 +45,7 @@
 }
 
 .imagesContainer img {
-    width: 50%;
+    width: 30%;
     height: fit-content;
     pointer-events: none;
     object-fit: contain;
