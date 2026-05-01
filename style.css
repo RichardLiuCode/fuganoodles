@@ -6,6 +6,14 @@ body {
     height: 100%;
 }
 
+h1::selection,
+p::selection {
+    background-color: rgb(175, 172, 172);
+    color: black;
+}
+
+
+
 .topBar {
     margin: 0px;
     width: 100%;
@@ -29,12 +37,16 @@ body {
     border-color: rgb(0, 0, 0, 0);
     border-bottom-width: 2px;
     border-radius: 0px;
+    z-index: 5;
 }
 
-.topBar.link:hover {
-    border-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: rgba(255, 255, 255, 0.586);
+
+@media (hover:hover) {
+    .topBar.link:hover {
+        border-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: rgba(255, 255, 255, 0.586);
+    }
 }
 
 .topBar.link a {

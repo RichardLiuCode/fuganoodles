@@ -46,3 +46,19 @@
     font-size: 20px;
     color: gray;
 }
+
+@media(orientation:portrait) {
+    .bodyContainer {
+        flex-direction: column;
+    }
+
+    .textContent {
+        width: 90%;
+        margin: auto;
+    }
+
+    .imageContainer {
+        width: 90%;
+        margin: auto;
+    }
+}

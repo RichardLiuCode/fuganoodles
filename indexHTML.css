@@ -60,6 +60,8 @@ body {
     object-fit: contain;
     background: none;
     z-index: 1;
+    pointer-events: none;
+    user-select: none;
 }
 
 .cupNoodlesImages.left {
@@ -130,13 +132,21 @@ body {
     height: calc(100vh - 100px)
 }
 
-@media (max-width:600px) {
+@media (max-width:950px) {
     .text-container {
-        user-select: none;
-        color: red;
-        font-family: arial;
+        font-size: 50px;
+    }
+}
+
+@media (max-width:790px) {
+    .text-container {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:630px) {
+    .text-container {
         font-size: 21px;
-        text-align: center;
     }
 
     .cupNoodlesImages {
