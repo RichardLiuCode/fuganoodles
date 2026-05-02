@@ -5,9 +5,7 @@
 
 .bodyContainer {
     background: none;
-    display: revert;
-    justify-content: space-around;
-    align-items: top;
+    display: block;
     width: 95%;
     margin-left: 2.5%;
     height: calc(100% - 80px);
@@ -49,4 +47,10 @@
     width: 40%;
     height: fit-content;
     pointer-events: none;
+}
+
+@media (orientation:portrait) {
+    .imagesContainer img {
+        width: 100%;
+    }
 }
