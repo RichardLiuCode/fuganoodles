@@ -6,16 +6,19 @@ body {
     height: 100%;
 }
 
-body::-webkit-scrollbar {
-    appearance: none;
-    width: 14px;
-    background-color: rgb(62, 62, 62);
-}
 
-body::-webkit-scrollbar-thumb {
-    appearance: none;
-    background-color: gray;
-    border-radius: 0px;
+@media(hover:hover) {
+    body::-webkit-scrollbar {
+        appearance: none;
+        width: 14px;
+        background-color: rgb(62, 62, 62);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        appearance: none;
+        background-color: gray;
+        border-radius: 0px;
+    }
 }
 
 h1::selection,
