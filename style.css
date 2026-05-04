@@ -77,6 +77,10 @@ p::selection {
     .topBar {
         height: 50px;
     }
+
+    .footer {
+        margin-top: -10px;
+    }
 }
 
 @media (max-width:540px) {
