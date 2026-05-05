@@ -20,6 +20,13 @@
     border-radius: 5px;
 }
 
+@media(max-width:510px) {
+    .shoppingContentArea {
+        width: 400px;
+    }
+}
+
+
 #shoppingAreaCloseBtn {
     cursor: pointer;
     position: absolute;
@@ -48,8 +55,8 @@
     position: absolute;
     top: 50px;
     left: 20px;
-    width: 460px;
-    height: 630px;
+    width: calc(100% - 40px);
+    height: calc(100% - 70px);
     background: none;
     border-style: solid;
     border-left-width: 1px;
