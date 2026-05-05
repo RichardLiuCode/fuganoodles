@@ -175,6 +175,7 @@ body {
 
 
 #shopNowBtn {
+    display: none;
     margin: 0 auto;
     margin-top: 15px;
     cursor: pointer;
@@ -189,7 +190,6 @@ body {
     font-family: arial;
     font-size: 25px;
     color: white;
-    display: flex;
     flex: 0 0 auto;
     justify-content: center;
     align-items: center;

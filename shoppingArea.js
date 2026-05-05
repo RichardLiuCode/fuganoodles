@@ -1,3 +1,7 @@
+setTimeout(function () {
+    document.getElementById("shopNowBtn").style.display = "flex";
+}, 4000);
+
 document.getElementById("shopNowBtn").addEventListener("click", function () {
     document.getElementById("shoppingArea").style.display = "flex";
 });
