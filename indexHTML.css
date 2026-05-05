@@ -37,7 +37,7 @@ body {
     user-select: none;
     color: red;
     font-family: arial;
-    font-size: 60px;
+    font-size: 62px;
     text-align: center;
     text-shadow: 0px 0px 10px rgb(103, 0, 0);
     z-index: 2;
@@ -171,4 +171,91 @@ body {
     .cupNoodlesImages {
         width: 42%;
     }
+}
+
+
+#shopNowBtn {
+    margin: 0 auto;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: rgba(127, 40, 25, 0.7);
+    width: 50%;
+    min-width: 250px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    border-radius: 30px;
+    font-family: arial;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+@keyframes shopBtnShaking {
+    0% {
+        transform: translate(10px);
+    }
+
+    10% {
+        transform: translate(-10px);
+    }
+
+    20% {
+        transform: translate(8px);
+    }
+
+    30% {
+        transform: translate(-8px);
+    }
+
+    40% {
+        transform: translate(6px);
+    }
+
+    50% {
+        transform: translate(-6px);
+    }
+
+    60% {
+        transform: translate(4px);
+    }
+
+    70% {
+        transform: translate(-4px);
+    }
+
+    80% {
+        transform: translate(2px);
+    }
+
+    90% {
+        transform: translate(-2px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@media(hover:hover) {
+    #shopNowBtn:hover {
+        background-color: rgba(143, 74, 62, 0.478);
+        animation-name: shopBtnShaking;
+        animation-duration: 1s;
+    }
+}
+
+#shopNowBtn:active {
+    background-color: rgba(92, 35, 25, 0.478);
+}
+
+#shopNowBtn img {
+    width: 30px;
+    height: 30px;
 }

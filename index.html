@@ -9,10 +9,12 @@ HTML written by Richard Liu, for the FUGA Noodles Group in Leadership Class.
     <link rel="icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="indexHTML.css">
+    <link rel="stylesheet" href="./shoppingArea.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUGA Noodles - Home</title>
     <script defer src="script.js"></script>
-    <script defer src="./shopppingCart.js"></script>
+    <script defer src="./shoppingCart.js"></script>
+    <script defer src="./shoppingArea.js"></script>
 </head>
 
 <body>
@@ -47,11 +49,16 @@ HTML written by Richard Liu, for the FUGA Noodles Group in Leadership Class.
         <div class="text-container">
             <h1>FUGA NOODLES</h1>
             <p>The New Era Of Ramen</p>
+            <button id="shopNowBtn"><img src="./assets/shopping_bag_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png">Shop
+                Now</button>
         </div>
     </div>
     <div class="cupNoodlesImagesContainer">
         <img class="cupNoodlesImages left" src="./assets/cupNoodles.png" draggable="false">
         <img class="cupNoodlesImages right" src="./assets/cupNoodles.png" draggable="false">
+    </div>
+    <div class="shoppingAreaWrapperAndBackground" id="shoppingArea">
+        <div class="shoppingContentArea"></div>
     </div>
     <footer class="footer">© 2026 Eason Zhou, Josue Ruiz Vargas, Richard Liu</footer>
 </body>
