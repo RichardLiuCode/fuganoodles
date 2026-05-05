@@ -105,3 +105,14 @@ p::selection {
     font-family: arial;
     color: rgb(186, 123, 6);
 }
+
+#shoppingCartBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+}
