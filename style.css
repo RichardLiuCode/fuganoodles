@@ -116,3 +116,10 @@ p::selection {
     background: none;
     border: none;
 }
+
+@media(max-width:950px) {
+    #shoppingCartBtn {
+        top: 60px;
+        right: 10px;
+    }
+}
