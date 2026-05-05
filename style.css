@@ -123,3 +123,8 @@ p::selection {
         right: 10px;
     }
 }
+
+/* Prevent Image being filter */
+img {   
+    filter:none!important;
+}
