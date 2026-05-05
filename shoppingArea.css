@@ -1,5 +1,5 @@
 .shoppingAreaWrapperAndBackground {
-    display: flex;
+    display: none;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -54,7 +54,42 @@
     border-style: solid;
     border-left-width: 1px;
     border-right-width: 1px;
-    border-top-width: 0px;
+    border-top-width: 1px;
     border-bottom-width: 0px;
     border-color: gray;
+    overflow-y: auto;
+}
+
+.shoppingOptionListWrapper::-webkit-scrollbar {
+    appearance: none;
+    width: 15px;
+    background-color: white;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.shoppingOptionListWrapper::-webkit-scrollbar-thumb {
+    appearance: none;
+    background-color: rgba(211, 211, 211, 0.7);
+}
+
+#optionsList li {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#optionsList li h1 {
+    font-family: arial;
+    color: brown;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 20px;
 }
