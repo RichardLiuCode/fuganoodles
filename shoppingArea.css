@@ -1,5 +1,5 @@
 .shoppingAreaWrapperAndBackground {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -51,6 +51,13 @@
     color: black;
 }
 
+#shoppingAreaCartDetainsDisplay {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-family: arial;
+}
+
 .shoppingOptionListWrapper {
     position: absolute;
     top: 50px;
@@ -91,6 +98,7 @@
     position: relative;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-color: gray;
 }
 
 #optionsList li h1 {
@@ -99,4 +107,26 @@
     margin-left: 5px;
     margin-top: 5px;
     font-size: 20px;
+}
+
+.addToCartBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 30px;
+    background-color: rgb(85, 248, 76);
+}
+
+.addToCartBtn:hover {
+    background-color: rgb(116, 249, 109);
+}
+
+.addToCartBtn:active {
+    background-color: rgb(18, 213, 8);
 }
