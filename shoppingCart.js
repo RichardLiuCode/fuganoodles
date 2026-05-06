@@ -50,7 +50,16 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             removeItemBtn.addEventListener("click", function () {
                 cart.Items.splice(i, 1);
                 localStorage.setItem("FUGANoodlesCart", JSON.stringify(cart));
-                window.location.reload();
+                this.parentElement.remove();
+                document.getElementById("itemsDisplay").textContent = `${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
+                let totalPrice = 0;
+                for (let i = 0; i < cart.Items.length; i++) {
+                    totalPrice += cart.Items[i].Price || 0;
+                }
+                document.getElementById("priceDisplay").textContent = `Total: $${totalPrice.toFixed(2)}`;
+                if (cart.Items.length <= 0) {
+                    document.getElementById("emptyShoppingCartBtn").remove();
+                }
             });
             document.getElementById("CartListContainer").insertBefore(listItem, document.getElementById("CartListContainer").firstChild);
         }
