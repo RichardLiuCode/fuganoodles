@@ -6,6 +6,9 @@ body {
     height: 100%;
 }
 
+button {
+    user-select: none;
+}
 
 @media(hover:hover) {
     body::-webkit-scrollbar {
