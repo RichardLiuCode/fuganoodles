@@ -9,7 +9,7 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
         if (!cart.Items) {
             cart.Items = [];
         }
-        document.getElementById("shoppingAreaCartDetainsDisplay").textContent = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
+        document.getElementById("shoppingAreaCartDetainsDisplay").innerHTML = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"} <a href=\"./cart.html\" target=\"_self\">View Cart</a>`;
     });
     addToCart = function (item) {
         cart.Items.push({
@@ -21,7 +21,7 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             }
         });
         localStorage.setItem("FUGANoodlesCart", JSON.stringify(cart));
-        document.getElementById("shoppingAreaCartDetainsDisplay").textContent = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
+        document.getElementById("shoppingAreaCartDetainsDisplay").innerHTML = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"} <a href=\"./cart.html\" target=\"_self\">View Cart</a>`;
     };
     document.getElementById("shoppingCartBtn").title = "My Shopping Cart";
 } else if (window.location.pathname == "/cart.html") {
