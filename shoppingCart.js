@@ -43,6 +43,15 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             listItem.innerHTML = itemHTML;
             listItem.id = `cartItem${i + 1}`;
             listItem.style.display = "flex";
+            const removeItemBtn = document.createElement("button");
+            removeItemBtn.style = "cursor:pointer;background-color:red;width:100px;height:30px;font-size:20px;font-family:arial;color:white;position:absolute;right:10px;top:10px;border-color:black;border-style:solid;border-width:2px;";
+            removeItemBtn.textContent = "Delete";
+            listItem.appendChild(removeItemBtn);
+            removeItemBtn.addEventListener("click", function () {
+                cart.Items.splice(i, 1);
+                localStorage.setItem("FUGANoodlesCart", JSON.stringify(cart));
+                window.location.reload();
+            });
             document.getElementById("CartListContainer").insertBefore(listItem, document.getElementById("CartListContainer").firstChild);
         }
         document.getElementById("priceDisplay").textContent = `Total: $${totalPrice.toFixed(2)}`;
