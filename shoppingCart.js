@@ -1,5 +1,5 @@
-if ((window.location.pathname == "/") || (window.location.pathname == "/index.html")) {
-
+let addToCart;
+if ((window.location.pathname == undefined) || (window.location.pathname == "/") || (window.location.pathname == "/index.html")) {
     let cart = undefined;
     window.addEventListener("load", function () {
         if (!localStorage.getItem("FUGANoodlesCart")) {
@@ -13,7 +13,7 @@ if ((window.location.pathname == "/") || (window.location.pathname == "/index.ht
         console.log("Cart:\n" + JSON.stringify(cart, null, 2));
         document.getElementById("shoppingAreaCartDetainsDisplay").textContent = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
     });
-    const addToCart = function (item) {
+    addToCart = function (item) {
         cart.Items.push({
             "Item": item,
             "Price": 1,
