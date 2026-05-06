@@ -50,6 +50,9 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             removeItemBtn.addEventListener("click", function () {
                 cart.Items.splice(i, 1);
                 localStorage.setItem("FUGANoodlesCart", JSON.stringify(cart));
+                if(cart.Items.length<=3){
+                    window.location.reload();
+                }
                 this.parentElement.remove();
                 document.getElementById("itemsDisplay").textContent = `${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
                 let totalPrice = 0;
