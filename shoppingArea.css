@@ -1,5 +1,5 @@
 .shoppingAreaWrapperAndBackground {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -47,6 +47,16 @@
     left: 20px;
     font-family: arial, sans-serif;
     font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+.shoppingAreaPrizeTag {
+    position: absolute;
+    top: 16px;
+    left: 200px;
+    font-family: arial, sans-serif;
+    font-size: 18px;
     font-weight: 300;
     color: black;
 }
