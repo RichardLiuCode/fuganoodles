@@ -1,5 +1,5 @@
 .shoppingAreaWrapperAndBackground {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -23,6 +23,24 @@
 @media(max-width:510px) {
     .shoppingContentArea {
         width: 400px;
+    }
+}
+
+@media(max-height:700px) {
+    .shoppingContentArea {
+        height: 600px;
+    }
+}
+
+@media(max-height:600px) {
+    .shoppingContentArea {
+        height: 500px;
+    }
+}
+
+@media(max-height:500px) {
+    .shoppingContentArea {
+        height: 270px;
     }
 }
 
