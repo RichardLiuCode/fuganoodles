@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
         cart.Items = [];
     }
     console.log("Cart:\n" + JSON.stringify(cart, null, 2));
-
+    document.getElementById("shoppingAreaCartDetainsDisplay").textContent = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
 });
 const addToCart = function (item) {
     cart.Items.push({
@@ -24,3 +24,7 @@ const addToCart = function (item) {
     localStorage.setItem("FUGANoodlesCart", JSON.stringify(cart));
     document.getElementById("shoppingAreaCartDetainsDisplay").textContent = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
 };
+document.getElementById("shoppingCartBtn").title = "My Shopping Cart";
+document.getElementById("shoppingCartBtn").addEventListener("click", function () {
+    window.location.href = "./cart.html";
+});
