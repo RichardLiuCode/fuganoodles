@@ -45,7 +45,7 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             listItem.style.display = "flex";
             document.getElementById("CartListContainer").insertBefore(listItem, document.getElementById("CartListContainer").firstChild);
         }
-        document.getElementById("priceDisplay").textContent = `Total: ${totalPrice}`;
+        document.getElementById("priceDisplay").textContent = `Total: $${totalPrice.toFixed(2)}`;
         document.getElementById("emptyShoppingCartBtn").addEventListener("click", function () {
             const confirm = prompt("Are you sure to empty your shopping cart? You can undo this action! If you want, type \"I want to clear my shopping cart\" to continue.");
             if (confirm == "I want to clear my shopping cart") {
