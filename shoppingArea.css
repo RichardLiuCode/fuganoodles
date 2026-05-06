@@ -1,5 +1,5 @@
 .shoppingAreaWrapperAndBackground {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -107,6 +107,15 @@
     margin-left: 5px;
     margin-top: 5px;
     font-size: 20px;
+}
+
+#optionsList li img {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 150px;
+    height: 150px;
+    border: none;
 }
 
 .addToCartBtn {
