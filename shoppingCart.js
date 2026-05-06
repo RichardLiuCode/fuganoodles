@@ -14,7 +14,7 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
     addToCart = function (item) {
         cart.Items.push({
             "Item": item,
-            "Price": 1,
+            "Price": 0.58,
             "Time": {
                 "Date": `${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}`,
                 "Time": `${new Date().getHours() % 12}:${new Date().getMinutes()}:${new Date().getSeconds()} ${new Date().getHours() > 12 ? "PM" : "AM"}`
@@ -46,7 +46,17 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             document.getElementById("CartListContainer").insertBefore(listItem, document.getElementById("CartListContainer").firstChild);
         }
         document.getElementById("priceDisplay").textContent = `Total: ${totalPrice}`;
-
+        document.getElementById("emptyShoppingCartBtn").addEventListener("click", function () {
+            const confirm = prompt("Are you sure to empty your shopping cart? You can undo this action! If you want, type \"I want to clear my shopping cart\" to continue.");
+            if (confirm == "I want to clear my shopping cart") {
+                cart.Items = [];
+                localStorage.setItem("FUGANoodlesCart", JSON.stringify(cart));
+                window.location.reload();
+            }
+        });
+        if (cart.Items.length <= 0) {
+            document.getElementById("emptyShoppingCartBtn").remove();
+        }
     });
 }
 window.addEventListener("load", function () {

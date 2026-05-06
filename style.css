@@ -15,6 +15,7 @@ body {
     }
 
     body::-webkit-scrollbar-thumb {
+        cursor: pointer;
         appearance: none;
         background-color: gray;
         border-radius: 0px;
