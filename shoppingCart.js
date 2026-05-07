@@ -83,6 +83,8 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             document.getElementById("checkoutBtn").remove();
         }
     });
+} else if (window.location.pathname == "/checkout.html") {
+
 }
 window.addEventListener("load", function () {
     if (document.getElementById("shoppingCartBtn")) {
