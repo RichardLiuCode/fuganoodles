@@ -84,6 +84,7 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
         }
     });
 } else if (window.location.pathname == "/checkout.html") {
+    let cart = undefined;
     window.addEventListener("load", function () {
         if (!localStorage.getItem("FUGANoodlesCart")) {
             localStorage.setItem("FUGANoodlesCart", "{\"Items\":[]}");
