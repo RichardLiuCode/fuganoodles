@@ -97,6 +97,7 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
         for (let i = 0; i < cart.Items.length; i++) {
             totalPrice += cart.Items[i].Price || 0;
         }
+        document.getElementById("priceDisplay").textContent = `Total: $${totalPrice.toFixed(2)}`;
     });
 }
 window.addEventListener("load", function () {
