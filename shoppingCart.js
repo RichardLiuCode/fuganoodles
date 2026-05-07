@@ -75,6 +75,9 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
                 window.location.reload();
             }
         });
+        document.getElementById("checkoutBtn").addEventListener("click", function () {
+            window.location.href = "./checkout.html";
+        });
         if (cart.Items.length <= 0) {
             document.getElementById("emptyShoppingCartBtn").remove();
             document.getElementById("checkoutBtn").remove();
