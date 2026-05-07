@@ -1,0 +1,44 @@
+<!--
+HTML written by Richard Liu, for the FUGA Noodles Group in Leadership Class.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./checkout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUGA Noodles - Checkout</title>
+    <script defer src="script.js"></script>
+    <script defer src="./shoppingCart.js"></script>
+</head>
+
+<body>
+    <div class="topBar" title="Home">
+        <div class="topBar link">
+            <a href="./">Home</a>
+        </div>
+    </div>
+    <div class="bodyContainer">
+        <div class="textContent">
+            <h1>Checkout</h1>
+        </div>
+        <div class="formContainer">
+            <form class="checkoutForm" action="user.html">
+                <input name="email" type="email" required placeholder="Enter your email">
+                <input name="phoneNumber" type="tel" required placeholder="Enter your phone number">
+                <input name="address" type="text" required placeholder="Enter your home address">
+                <input name="cardNumber" type="tel" required placeholder="Enter your credit card number">
+                <div class="recaptchaContainer">
+                    <img src="./assets/recaptcha.png">
+                    <input type="checkbox" required>
+                </div>
+                <input type="submit" value="Pay">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
