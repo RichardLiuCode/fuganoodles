@@ -84,7 +84,20 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
         }
     });
 } else if (window.location.pathname == "/checkout.html") {
-
+    window.addEventListener("load", function () {
+        if (!localStorage.getItem("FUGANoodlesCart")) {
+            localStorage.setItem("FUGANoodlesCart", "{\"Items\":[]}");
+        }
+        cart = JSON.parse(localStorage.getItem("FUGANoodlesCart"));
+        if (!cart.Items) {
+            cart.Items = [];
+        }
+        document.getElementById("itemsDisplay").textContent = `${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"}`;
+        let totalPrice = 0;
+        for (let i = 0; i < cart.Items.length; i++) {
+            totalPrice += cart.Items[i].Price || 0;
+        }
+    });
 }
 window.addEventListener("load", function () {
     if (document.getElementById("shoppingCartBtn")) {
