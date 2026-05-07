@@ -66,6 +66,15 @@
     outline: none;
 }
 
+.recaptchaAndSubmitBtnContainer {
+    width: calc(60% + 10px);
+    min-width: 200px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .recaptchaContainer {
     width: 200px;
     height: 50px;
@@ -91,6 +100,19 @@
     height: 18px;
 }
 
+.checkoutForm input[type="submit"] {
+    cursor: pointer;
+    background-color: blue;
+    appearance: none;
+    width: 80px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
+    border-radius: 2px;
+}
 
 @media(orientation:portrait) {
     .bodyContainer {
