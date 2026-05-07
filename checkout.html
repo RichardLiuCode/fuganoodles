@@ -24,13 +24,16 @@ HTML written by Richard Liu, for the FUGA Noodles Group in Leadership Class.
     <div class="bodyContainer">
         <div class="textContent">
             <h1>Checkout</h1>
+            <p id="itemsDisplay">0 item</p>
+            <p id="priceDisplay">Total: $0</p>
         </div>
         <div class="formContainer">
             <form class="checkoutForm" action="user.html">
-                <input name="email" type="email" required placeholder="Enter your email">
+                <input name="email" type="email" required placeholder="Enter your email (name@example.com)">
                 <input name="phoneNumber" type="tel" required placeholder="Enter your phone number">
                 <input name="address" type="text" required placeholder="Enter your home address">
-                <input name="cardNumber" type="tel" required placeholder="Enter your credit card number">
+                <input name="cardNumber" type="text" required
+                    placeholder="Enter your credit card number (XXXX XXXX XXXX XXXX)">
                 <div class="recaptchaAndSubmitBtnContainer">
                     <div class="recaptchaContainer">
                         <img src="./assets/recaptcha.png">
