@@ -106,5 +106,6 @@ window.addEventListener("load", function () {
         document.getElementById("shoppingCartBtn").addEventListener("click", function () {
             window.location.href = "./cart.html";
         });
+        document.getElementById("shoppingCartBtn").title = "My Shopping Cart";
     }
 });
