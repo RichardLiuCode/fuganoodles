@@ -58,19 +58,26 @@
                     </svg>
                 </div>
                 <div class="content">
-                    <span class="title">Order validated</span>
+                    <span class="title">You just got <span id="noodleAmountsDisplay"></span> noodles.</span>
                     <p class="message">Thank you for your purchase. you noodles will be delivered within 2 days</p>
                 </div>
                 <div class="actions">
                     <button class="history" type="button" onclick="window.location.href='./index.html'"
                         style="cursor:pointer;">Back to home</button>
-                    <button class="track" type="button" onclick="window.location.href='./cart.html'"
-                        style="cursor:pointer;">View cart</button>
-                </div>
-
+                       </div>
             </div>
         </div>
     </div>
+    <script>
+        window.onload = function () {
+            if (localStorage.getItem("FUGANoodlesCart")) {
+                const cart = JSON.parse(localStorage.getItem("FUGANoodlesCart"));
+                if (cart.Items) {
+                    document.getElementById("noodleAmountsDisplay").textContent = cart.Items.length;
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
