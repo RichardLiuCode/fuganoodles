@@ -1,3 +1,5 @@
+/* JavaScript written by Richard Liu, for the FUGA Noodles Group in Leadership Class. */
+
 let addToCart;
 if ((window.location.pathname == undefined) || (window.location.pathname == "/") || (window.location.pathname == "/index.html")) {
     let cart = undefined;

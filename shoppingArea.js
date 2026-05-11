@@ -1,3 +1,5 @@
+/* JavaScript written by Richard Liu, for the FUGA Noodles Group in Leadership Class. */
+
 setTimeout(function () {
     document.getElementById("shopNowBtn").style.display = "flex";
 }, 4000);
