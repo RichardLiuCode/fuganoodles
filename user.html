@@ -11,6 +11,7 @@ HTML written by Richard Liu, for the FUGA Noodles Group in Leadership Class.
     <link rel="stylesheet" href="afterOrder.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="script.js"></script>
+    <script defer src="afterPaymentPage.js"></script>
 </head>
 
 <body>
@@ -69,16 +70,6 @@ HTML written by Richard Liu, for the FUGA Noodles Group in Leadership Class.
             </div>
         </div>
     </div>
-    <script>
-        window.onload = function () {
-            if (localStorage.getItem("FUGANoodlesCart")) {
-                const cart = JSON.parse(localStorage.getItem("FUGANoodlesCart"));
-                if (cart.Items) {
-                    document.getElementById("noodleAmountsDisplay").textContent = cart.Items.length;
-                }
-            }
-        }
-    </script>
 </body>
 
 </html>
