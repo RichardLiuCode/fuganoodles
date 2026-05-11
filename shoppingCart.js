@@ -26,6 +26,13 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
         document.getElementById("shoppingAreaCartDetainsDisplay").innerHTML = `Cart: ${cart.Items.length} ${cart.Items.length > 1 ? "items" : "item"} <a href=\"./cart.html\" target=\"_self\">View Cart</a>`;
     };
     document.getElementById("shoppingCartBtn").title = "My Shopping Cart";
+    document.getElementById("optionsList").querySelectorAll("li").forEach(function (option) {
+        const optionName = option.querySelector("h1").textContent;
+        const addToCartBtn = option.querySelector("button[class='addToCartBtn']");
+        addToCartBtn.addEventListener("click", function () {
+            addToCart(optionName);
+        });
+    });
 } else if (window.location.pathname == "/cart.html") {
     let cart = undefined;
     window.addEventListener("load", function () {
