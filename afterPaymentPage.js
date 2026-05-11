@@ -5,4 +5,7 @@ window.onload = function () {
             document.getElementById("noodleAmountsDisplay").textContent = cart.Items.length;
         }
     }
+    document.getElementById("backToHomeBtn").addEventListener("click", function () {
+        window.location.href = "./";
+    });
 };
