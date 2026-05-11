@@ -1,3 +1,5 @@
+/* CSS written by Richard Liu, for the FUGA Noodles Group in Leadership Class. */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -97,7 +99,7 @@ body {
     z-index: 1;
     pointer-events: none;
     user-select: none;
-    filter:none!important;
+    filter: none !important;
 }
 
 .cupNoodlesImages.left {
