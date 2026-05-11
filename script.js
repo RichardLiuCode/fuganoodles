@@ -4,6 +4,7 @@ window.addEventListener("load", function () {
     if (window.top.location.href != window.self.location.href) {
         document.body.innerHTML = "";
         console.error("The website is not allowed to embed into another web page with an iframe");
+        document.head.innerHTML = "";
         window.self.location.href = "about:blank";
     } else {
         console.log("%cWarning!", "font-size:40px;color:red;background-color:yellow;padding:5px;");
