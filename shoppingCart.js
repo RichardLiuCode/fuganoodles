@@ -1,7 +1,7 @@
 /* JavaScript written by Richard Liu, for the FUGA Noodles Group in Leadership Class. */
 
 let addToCart;
-if ((window.location.pathname == undefined) || (window.location.pathname == "/") || (window.location.pathname == "/index.html") || (window.location.href == "https://fuganoodles.onrender.com")) {
+if ((window.location.pathname == undefined) || (window.location.pathname == "/") || (window.location.pathname == "/index.html") || (window.location.pathname == "/fuganoodles/")) {
     let cart = undefined;
     window.addEventListener("load", function () {
         if (!localStorage.getItem("FUGANoodlesCart")) {
