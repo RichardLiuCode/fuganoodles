@@ -1,7 +1,7 @@
 /* JavaScript written by Richard Liu, for the FUGA Noodles Group in Leadership Class. */
 
 let addToCart;
-if ((window.location.pathname == undefined) || (window.location.pathname == "/") || (window.location.pathname == "/index.html")) {
+if ((window.location.pathname == undefined) || (window.location.pathname == "/") || (window.location.pathname == "/index.html") || (window.location.href == "https://fuganoodles.onrender.com")) {
     let cart = undefined;
     window.addEventListener("load", function () {
         if (!localStorage.getItem("FUGANoodlesCart")) {
@@ -28,7 +28,9 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
     document.getElementById("shoppingCartBtn").title = "My Shopping Cart";
     document.getElementById("optionsList").querySelectorAll("li").forEach(function (option) {
         const optionName = option.querySelector("h1").textContent;
+        console.log(`Noodle option ${optionName}`);
         const addToCartBtn = option.querySelector("button[class='addToCartBtn']");
+
         addToCartBtn.addEventListener("click", function () {
             addToCart(optionName);
         });
