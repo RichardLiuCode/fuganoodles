@@ -19,7 +19,7 @@ if ((window.location.pathname == undefined) || (window.location.pathname == "/")
             "Price": 0.58,
             "Time": {
                 "Date": `${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}`,
-                "Time": `${new Date().getHours() % 12}:${new Date().getMinutes()}:${new Date().getSeconds()} ${new Date().getHours() > 12 ? "PM" : "AM"}`
+                "Time": `${new Date().getHours() % 12 || 12}:${new Date().getMinutes()}:${new Date().getSeconds()} ${new Date().getHours() > 12 ? "PM" : "AM"}`
             }
         });
         localStorage.setItem("FUGANoodlesCart", JSON.stringify(cart));
